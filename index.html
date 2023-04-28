@@ -9,17 +9,22 @@
 </head>
 <body onkeypress="menu()">
     <header class="header">
-        <h1>Transformers</h1>
+        <h1 class="title">Transformers</h1>
+        <section class="minibuttons">
+            <button class="minia" onclick="red()"></button>
+            <button class="minid" onclick="purple()"></button>
+        </section>
     </header>
     <div class="menu-father">
         <h2>Escolha seu lado:</h2>
         <div class="menu-son">
-                <img src="./assets/autobotLogo.svg" alt="Simbolo autobot"  class="autobotSimbol" onclick="autocolor()">
+                <button class="autobotSimbol" onclick="autocolor()"></button>
 
-                <img src="./assets/decepticonLogo.svg" alt="Simbolo decepticon" class="decepticonSimbol" onclick="deceptcolor()">
+                <button class="decepticonSimbol" onclick="deceptcolor()"></button>
         </div>
     </div>  
     <p class="warning">Aperte qualquer botão</p>
+    <audio src="./audios/transformSound_1.mp3" class="audio"></audio>
         <div class="first-text">
             <img src="./assets/tfclassic.jpg" alt="Imagem ilustrativa" class="image">
             <section class="content">
@@ -46,7 +51,7 @@
                     da terra e possuem a hablilidade de se transformarem em animais.
                     Os Maximals escolhem os mamiferos e são os mocinhos da história, já a vilania fica por conta dos Predacons, cujo preferiram Répteis e insetos
                 </p>
-                <p>Conheça os Maximals protagonistas:</p>
+                <p>Conheça os Maximals protagonistas, passando o mouse por cima das imagens abaixo:</p>
                 <p class="onmob">Rinox, Airazor, Cheetor</p>
                 <br>
                 <img src="./assets/maximals.webp" class="mobimg">

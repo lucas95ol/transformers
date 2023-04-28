@@ -23,12 +23,34 @@
     to{width: 95%; background-color: #c9e9fd;}
 }
 
+@keyframes title{
+    from{transform:translateY(-180%)}
+    to{transform:translateY(5%);}
+}
+
+@keyframes minib{
+    from{transform: translateX(180%);}
+    to{transform: translateY(5%);}
+}
+
+@keyframes red{
+    from{background-color: #9d13e7;}
+    to{background-color: #ed1c33;}
+}
+
+@keyframes purple{
+    from{background-color: #ed1c33;}
+    to{background-color: #9d13e7;}
+}
+
 * {
     margin: 0;
 }
 
 header{
     padding: 2%;
+    display: flex;
+    gap: 60%;
 }
 
 h1,h2, h3{
@@ -41,6 +63,12 @@ h1{
 
 p{
     font-family: 'pfont';
+}
+
+button{
+    background-color: transparent;
+    padding: 0%;
+    border: 0px;
 }
 
 .warning{
@@ -60,37 +88,71 @@ p{
     align-items: center;
 }
 
+.minibuttons{
+    width: 20%;
+    padding: 0.1%;
+    display: flex;
+    gap: 5%;
+    visibility: hidden;
+}
+
 .menu-son{
     width: 80%;
     height: 400px;
-     /*espaçamento*/
     display: flex;
     justify-content: space-between;
 }
 
+.minia, .minid{
+    width: 15%;
+    padding: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.minia{
+    background-image: url(./assets/autobotred.png);
+}
+
+.minid{
+    background-image: url(./assets/decepticonpurple.png);
+}
+
 .autobotSimbol, .decepticonSimbol{
-    width: 80%;
-    height: 300px;
+    width: 50%;
+    padding: 1%;
     /*cosmético*/
     cursor: pointer;
 }
 
+.autobotSimbol{
+    background-image: url(./assets/autobotLogo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.decepticonSimbol{
+    background-image: url(./assets/decepticonLogo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
 .autobotSimbol:hover{
-    width: 60%;
-    height: 500px;
-
-    border-radius: 2rem;
-
-    background-color: #e61919;
+    background-image: url(./assets/autobotred.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
 }
 
 .decepticonSimbol:hover{
-    width: 60%;
-    height: 500px;
-
-    border-radius: 2rem;
-
-    background-color: #61008a;
+    background-image: url(./assets/decepticonpurple.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
 }
 
 
@@ -113,12 +175,13 @@ p{
 }
 
 .first-text, .thirty-text{
-    border-right: 10px solid black;
-    border-left: 4px solid black;
+    border-right: 10px solid #000;
+    border-left: 4px solid #000;
 }
+
 .second-text, .fourty-text{
-    border-left: 10px solid black;
-    border-right: 4px solid black;
+    border-left: 10px solid #000;
+    border-right: 4px solid #000;
 }
 
 .onmob{
@@ -145,7 +208,7 @@ p{
     width: 50%;
     padding: 2%;
 
-    border: 2px solid black;
+    border: 2px solid #000;
     border-radius: 1rem;
 }
 
@@ -153,13 +216,13 @@ p{
     height: 9rem;
 
     display: flex;
-    border: 2px solid black;
+    border: 2px solid #000;
 }
 
 .persons{
     width: 30%;
 
-    border: 2px solid black;
+    border: 2px solid #000;
   
     overflow: hidden;
 }
@@ -250,8 +313,8 @@ p{
         width: 100%;
         height: 40rem;
         border: 0px;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
         margin-top: 0px;
         margin-left: 0px;
         margin-right: 0px;
