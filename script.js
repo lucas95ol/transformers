@@ -1,4 +1,5 @@
 /*variáeis*/ 
+const BODY = document.querySelector(".body");
 const MENU = document.querySelector(".menu-father");
 const CLICK = document.querySelector(".warning");
 const MINIBTN = document.querySelector(".minibuttons")
@@ -34,6 +35,7 @@ function hide(element){
 
 function deceptcolor(){
     HEAD.setAttribute("style","animation: decep; animation-duration: 5s; background-color:  #9d13e7");
+    BODY.setAttribute("style", "overflow: scroll");
     AUDIO.play();
     sides(MINIBTN);
     title();
@@ -42,10 +44,12 @@ function deceptcolor(){
     sides(STEXT);
     show(TTEXT);
     show(FTTEXT);
+    
 }
 
 function autocolor(){
     HEAD.setAttribute("style","animation: auto; animation-duration: 5s; background-color:  #ed1c33");
+    BODY.setAttribute("style", "overflow: scroll");
     AUDIO.play();
     sides(MINIBTN);
     title();
