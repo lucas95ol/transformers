@@ -10,6 +10,10 @@ const FTEXT = document.querySelector(".first-text");
 const STEXT = document.querySelector(".second-text");
 const TTEXT = document.querySelector(".thirty-text");
 const FTTEXT = document.querySelector(".fourty-text");
+const BSCREEN = document.querySelectorAll(".onlybigscreen");
+var width = window.innerWidth;
+
+console.log(width)
 
 /*função para fazer a div que contem o menu aparecer, ela aparecera quando teclar algum botão do teclado*/
 function menu(){

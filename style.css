@@ -61,10 +61,6 @@ h1,h2, h3{
     font-family: 'tfont';
 }
 
-h1{
-    color: #fff;
-}
-
 p{
     font-family: 'pfont';
 }
@@ -73,6 +69,11 @@ button{
     background-color: transparent;
     padding: 0%;
     border: 0px;
+}
+
+.title{
+    color: #fff;
+    font-size: 3rem;
 }
 
 .warning{
@@ -268,7 +269,57 @@ button{
     border-radius: 1rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px){
+    header{
+        gap: 50%;
+    }
+
+    h2{
+        font-size: larger;
+    }
+    
+    p{
+        font-size: medium;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .minia, .minid{
+        width: 95%;
+    }
+
+    .image{
+        height: 17rem;
+    }
+
+    .first-text, .second-text, .thirty-text, .fourty-text{
+        height: 17.5rem;
+    }
+
+    .onlybigscreen{
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    
+    }
+
+    .beast-wars{
+        font-size: 0.9rem;
+    }
+
+    .film{
+        font-size: 0.88rem;
+    }
+
+    .rotb{
+        font-size: 0.69rem;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
     *{
         margin: 0px;
         padding: 0px;
@@ -393,3 +444,4 @@ button{
         height: 0px;
     }
 }
+
