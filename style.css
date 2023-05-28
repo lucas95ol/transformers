@@ -43,6 +43,13 @@
     to{background-color: #9d13e7;}
 }
 
+@keyframes mobile{
+    0%{background-color: #ed1c33;}
+    25%{background-color: grey;}
+    75%{background-color: #9d13e7;}
+    100%{background-color: #ed1c33;}
+}
+
 * {
     margin: 0;
 }
@@ -375,10 +382,13 @@ button{
     }
 
     .header{
-        width: 100%;
+        width: 98%;
         height: 5rem;
         background-color: grey;
         margin-bottom: 0%;
+        animation: mobile;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
     }
 
     .minibuttons{
@@ -453,7 +463,7 @@ button{
     .trailermob{
         visibility: visible;
         width: 100%;
-        height: 20rem;
+        height: 21rem;
         border-radius: 1rem;
     }
 
@@ -488,12 +498,31 @@ button{
     }
 }
 
-@media screen and (max-width:300px){
-   
+@media screen and (max-width:400px){
+    .header{
+        animation-name: mobile;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
     .first-text{
-        padding: none;
-        margin: none;
-        height: 80rem;
+        height: 34rem;
+    } 
+
+    .second-text{
+        height: 43rem;
+    }
+
+    .thirty-text{
+        height: 66rem;
+    }
+
+    .fourty-text{
+        height: 68rem;
+    }
+
+    .rotb{
+        font-size: 90%;
     }
 }
 
