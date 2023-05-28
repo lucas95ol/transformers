@@ -513,12 +513,20 @@ button{
         height: 43rem;
     }
 
+    .content2{
+        margin-top: 1rem;
+    }
+
     .thirty-text{
         height: 66rem;
     }
 
     .fourty-text{
         height: 68rem;
+    }
+
+    .content4{
+        margin-top: 1rem;
     }
 
     .rotb{
